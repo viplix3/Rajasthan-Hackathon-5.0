@@ -10,7 +10,6 @@
 - [ ] Design a GUI to show out working (Partly done)
 - [ ] Write scripts for syncing model results, traffic light management algorith and GUI 
 - [ ] Deploy model onto raspberry-pi
-- [ ] Win Hackathon 5.0 (Hopefully)
 
 
 ## An attempt to reduce traffic congestion using deep learning for object detection and traffic light time management.
