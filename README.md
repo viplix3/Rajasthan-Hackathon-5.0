@@ -9,12 +9,12 @@
 - [x] Write an algorithm for managing traffic light efficiently using multiple threads for real time results
 - [x] Design a GUI to show out working (Partly done)
 - [x] Write scripts for syncing model results, traffic light management algorith and GUI 
-- [ ] Deploy model onto raspberry-pi
+- [x] Deploy model onto raspberry-pi
 
 ## Instructions for running the code (On linux/unix system)
 
 ```
-	pip install -r requirements.txt
+	pip install -r requirements.txt (First time only, for installing all the required dependencies)
 	./run.sh
 ```
 
@@ -33,7 +33,19 @@ Once we have the traffic density, we feed it to an sufficiently decent algorithm
 All this result is displayed using a GUI we developed on out own.
 
 ### Screenshots
+
+<img
+	src=./1.jpg
+	align="center"
+/>
+
+<img
+	src=./2.jpg
+	align="center"
+/>
+
+
 <img
 	src=./model.JPG
-	allign='center'
+	align="center"
 />
