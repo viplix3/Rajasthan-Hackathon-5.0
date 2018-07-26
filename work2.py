@@ -27,7 +27,7 @@ class TrafficUi(QMainWindow):
         sImage = oImage.scaled(QSize(1015,1000))
         palette = QPalette()
         palette.setBrush(10, QBrush(sImage))
-        newfont = QFont('Sans Serif', 12, QFont.Bold)
+        newfont = QFont('Roboto', 12, QFont.Bold)
         self.setPalette(palette)
 
         self.run_btn = QPushButton('Start',self)
@@ -38,18 +38,22 @@ class TrafficUi(QMainWindow):
         self.east_label = QLabel("east",self)
         self.east_label.resize(200,40)
         self.east_label.move(780,380)
+        self.east_label.setFont(newfont)
         
         self.south_label = QLabel("south",self)
         self.south_label.resize(200,40)
         self.south_label.move(400,825)
+        self.south_label.setFont(newfont)
 
         self.west_label = QLabel("west",self)
         self.west_label.resize(200,40)
         self.west_label.move(160,380)
+        self.west_label.setFont(newfont)
         
         self.north_label = QLabel("north",self)
         self.north_label.resize(200,40)
         self.north_label.move(400,175)
+        self.north_label.setFont(newfont)
 
         self.east_density = QLabel("low",self)
         self.east_density.resize(200,40)
