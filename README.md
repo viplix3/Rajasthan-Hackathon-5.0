@@ -9,12 +9,12 @@
 - [ ] Design a GUI to show out working (Partly done)
 - [ ] Write scripts for syncing model results, traffic light management algorith and GUI 
 - [ ] Deploy model onto raspberry-pi
-- [ ] Win Hackathon 5.0 
+- [ ] Win Hackathon 5.0 (Hopefully)
 
 
 ## An attempt to reduce traffic congestion using deep learning for object detection and traffic light time management.
 
-### Note : All this is done in real time (approximately 1.5fps for the whole computation)
+### Note : All this is done in real time (approximately 1.2fps for the whole computation)
 
 We are using a raspberry pi (micro-controller) that captures the live feed form the traffic signal posts and feeds it to a deep neural network.
 The deep neural network is trained for detection and localising traffic elements (like cars, trucks, buses, motorcycles, bikes, persons etc.)
