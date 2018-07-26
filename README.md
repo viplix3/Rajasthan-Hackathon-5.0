@@ -23,12 +23,9 @@
 
 ### Note : All this is done in real time (approximately 1.2fps for the whole computation)
 
-We are using a raspberry pi (micro-controller) that captures the live feed form the traffic signal posts and feeds it to a deep neural network.
-The deep neural network is trained for detection and localising traffic elements (like cars, trucks, buses, motorcycles, bikes, persons etc.)
+We are using a raspberry pi (micro-controller) that captures the live feed form the traffic signal posts and feeds it to a deep neural network. The deep neural network is trained for detecting and localizing traffic elements (like cars, trucks, buses, motorcycles, bikes, persons etc.)
 
-Once the live feed is fed to the deep neural network it returns the location of traffic elemets, their count and their type (cars, buses, etc.).
-This information is used for the calcuation of traffic density using a formula we developed.
-Once we have the traffic density, we feed it to an sufficiently decent algorithm which uses multiple threads to handle the task of managing traffic light according to the traffic density present on every lane, in real time wihout any human intervention.
+Once the live feed is fed to the deep neural network it returns the location of traffic elements, their count and their type (cars, buses, etc.). This information is used for the calculation of traffic density using a formula we developed. Once we have the traffic density, we feed it to an sufficiently decent algorithm which uses multiple threads to handle the task of managing traffic light according to the traffic density present on every lane, in real time without any human intervention.
 
 All this result is displayed using a GUI we developed on out own.
 
