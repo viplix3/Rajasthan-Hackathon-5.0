@@ -11,6 +11,12 @@
 - [x] Write scripts for syncing model results, traffic light management algorith and GUI 
 - [ ] Deploy model onto raspberry-pi
 
+## Instructions for running the code (On linux/unix system)
+
+'''
+	pip install -r requirements.txt
+	./run.sh
+'''
 
 
 ## An attempt to reduce traffic congestion using deep learning for object detection and traffic light time management.
