@@ -2,8 +2,9 @@
 
 ## Todo
 
-- [x] Design the deep leaning model architecture for traffic element detection
-- [ ] Train the model for the required task (Currently training)
+- [x] Design the deep leaning model architecture for traffic element detection (YOLOv2 algorithm)
+- [X] Train the model for the required task (Currently training)
+- [x] Use SSD (Single Shot Detection) model for better results
 - [x] Develop a formula for calculating the traffic density using the information extracted by our deep learning model 
 - [ ] Write an algorithm for managing traffic light efficiently using multiple threads for real time results
 - [ ] Design a GUI to show out working (Partly done)
