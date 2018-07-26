@@ -35,12 +35,12 @@ All this result is displayed using a GUI we developed on out own.
 ### Screenshots
 
 <img
-	src=./1.jpg
+	src=./1.png
 	align="center"
 />
 
 <img
-	src=./2.jpg
+	src=./2.png
 	align="center"
 />
 
