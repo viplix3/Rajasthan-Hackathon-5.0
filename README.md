@@ -44,6 +44,7 @@ All this result is displayed using a GUI we developed on out own.
 	align="center"
 />
 
+### Work Flow Model
 
 <img
 	src=./model.JPG
