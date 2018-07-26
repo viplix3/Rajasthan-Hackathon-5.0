@@ -10,7 +10,7 @@ import time,threading
 import sys,os
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QImage, QPalette, QBrush, QPixmap
+from PyQt5.QtGui import QImage, QPalette, QBrush, QPixmap, QFont
 from PyQt5.QtCore import QSize    
 
 
@@ -27,6 +27,7 @@ class TrafficUi(QMainWindow):
         sImage = oImage.scaled(QSize(1015,1000))
         palette = QPalette()
         palette.setBrush(10, QBrush(sImage))
+        newfont = QFont('Sans Serif', 12, QFont.Bold)
         self.setPalette(palette)
 
         self.run_btn = QPushButton('Start',self)
@@ -49,6 +50,31 @@ class TrafficUi(QMainWindow):
         self.north_label = QLabel("north",self)
         self.north_label.resize(200,40)
         self.north_label.move(400,175)
+
+        self.east_density = QLabel("low",self)
+        self.east_density.resize(200,40)
+        self.east_density.move(780,600)
+        self.east_density.setFont(newfont)
+        self.east_density.setStyleSheet('color : white;')
+        
+        self.south_density = QLabel("low",self)
+        self.south_density.resize(200,40)
+        self.south_density.move(600,825)
+        self.south_density.setFont(newfont)
+        self.south_density.setStyleSheet('color : white;')
+
+        self.west_density = QLabel("low",self)
+        self.west_density.resize(200,40)
+        self.west_density.move(160,600)
+        self.west_density.setFont(newfont)
+        self.west_density.setStyleSheet('color : white;')
+        
+        self.north_density = QLabel("low",self)
+        self.north_density.resize(200,40)
+        self.north_density.move(600,175)
+        self.north_density.setFont(newfont)
+        self.north_density.setStyleSheet('color : white;')
+
 
         self.traffic_h = QLabel(self)
         self.traffic_h_pixmap = QPixmap('traffic_lamp2.png')
@@ -570,7 +596,10 @@ class TrafficUi(QMainWindow):
                                         self.west = 15
                                         self.north = 45
                         #self.north_status = "low"
-
+                self.east_density.setText(self.east_status)
+                self.south_density.setText(self.south_status)
+                self.west_density.setText(self.west_status)
+                self.north_density.setText(self.north_status)
 
                 print(self.east,self.south,self.west,self.north)
                 
